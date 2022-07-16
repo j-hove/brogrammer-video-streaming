@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // (I think this is for version react-router-dom v5)
 import Login from './components/Login';
+import Header from './components/Header'
 import './App.css';
 
 function App() {
@@ -8,7 +9,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Login /> 
+              </>       
+            }
+          />
         </Routes>
       </BrowserRouter>
       {/* (I think this is for version react-router-dom v5) */}
