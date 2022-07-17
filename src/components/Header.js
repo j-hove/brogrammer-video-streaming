@@ -1,52 +1,66 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
+    let navigate = useNavigate();
+    const pathname = window.location.pathname;   
+
     return (
         <Nav>
             <Logo>
                 <img src="/images/logo.svg" alt="Disney+ Logo" />
             </Logo>
-            <NavMenu>
-                <a href="/home">
-                    <img src="/images/home-icon.svg" alt="HOME" />   
-                    <span>
-                        HOME
-                    </span>                 
-                </a>
-                <a>
-                    <img src="/images/search-icon.svg" alt="SEARCH" />   
-                    <span>
-                        SEARCH
-                    </span>                 
-                </a> 
-                <a>
-                    <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />   
-                    <span>
-                        WATCHLIST
-                    </span>                 
-                </a> 
-                <a>
-                    <img src="/images/original-icon.svg" alt="ORIGINALS" />   
-                    <span>
-                        ORIGINALS
-                    </span>                 
-                </a> 
-                <a>
-                    <img src="/images/movie-icon.svg" alt="MOVIES" />   
-                    <span>
-                        MOVIES
-                    </span>                 
-                </a>
-                <a>
-                    <img src="/images/series-icon.svg" alt="SERIES" />   
-                    <span>
-                        SERIES
-                    </span>                 
-                </a>                    
-            </NavMenu>
-            <Login>
-                LOGIN
-            </Login>
+            {pathname != "/home" ? (
+                <Login 
+                    onClick={() => {
+                        navigate("/login");
+                        }}
+                    >
+                    LOGIN
+                </Login>
+            ) : (
+                <>
+                    <NavMenu>
+                        <a href="/home">
+                            <img src="/images/home-icon.svg" alt="HOME" />   
+                            <span>
+                                HOME
+                            </span>                 
+                        </a>
+                        <a>
+                            <img src="/images/search-icon.svg" alt="SEARCH" />   
+                            <span>
+                                SEARCH
+                            </span>                 
+                        </a> 
+                        <a>
+                            <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />   
+                            <span>
+                                WATCHLIST
+                            </span>                 
+                        </a> 
+                        <a>
+                            <img src="/images/original-icon.svg" alt="ORIGINALS" />   
+                            <span>
+                                ORIGINALS
+                            </span>                 
+                        </a> 
+                        <a>
+                            <img src="/images/movie-icon.svg" alt="MOVIES" />   
+                            <span>
+                                MOVIES
+                            </span>                 
+                        </a>
+                        <a>
+                            <img src="/images/series-icon.svg" alt="SERIES" />   
+                            <span>
+                                SERIES
+                            </span>                 
+                        </a>                    
+                    </NavMenu>
+                    <UserImg src="/images/user.webp" alt="user" />                
+                </>
+            )}          
         </Nav>
     
     );
@@ -146,14 +160,16 @@ const NavMenu = styled.div`
     }
 `;
 
-const Login = styled.div`
+const Login = styled.button`
     background-color: rgba(0,0,0,0.6);
+    color: #f9f9f9;
     padding: 8px 16px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     border: 1px solid #f9f9f9;
     border-radius: 4px;
     transition: all 0.2s ease 0s;
+    cursor: pointer;
 
     &:hover {
         background-color: #f9f9f9;
@@ -161,5 +177,9 @@ const Login = styled.div`
         border-color: transparent;
     };
 `;
+
+const UserImg = styled.img`
+    height: 100%;
+`
 
 export default Header
