@@ -8,14 +8,18 @@ import Home from './components/Home';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
+  // var pathname = window.location.pathname;
+  // console.log(pathname);
+  
+  return (    
+    <div className="App">      
+      <BrowserRouter>                
+        {/* {pathname.includes("login")===false ? <Header />: null} */}
         <Routes>
           <Route
             path="/"
             element={
-              <>
+              <>                
                 <Header />
                 <Login /> 
               </>       

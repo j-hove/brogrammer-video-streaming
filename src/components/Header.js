@@ -57,8 +57,16 @@ const Header = (props) => {
                                 SERIES
                             </span>                 
                         </a>                    
-                    </NavMenu>
-                    <UserImg src="/images/user.webp" alt="user" />                
+                    </NavMenu>                    
+                    <UserMenu> //UserMenu component is actually SignOut component
+                        <UserImg src="/images/user.webp" alt="user" />                
+                        <DropDown>
+                            <span onClick={() => {
+                                navigate("/login");
+                                }}
+                            >Sign Out</span>
+                        </DropDown>
+                    </UserMenu>
                 </>
             )}          
         </Nav>
@@ -180,6 +188,14 @@ const Login = styled.button`
 
 const UserImg = styled.img`
     height: 100%;
-`
+`;
+
+const UserMenu = styled.div`
+
+`;
+
+const DropDown = styled.div`
+
+`;
 
 export default Header
