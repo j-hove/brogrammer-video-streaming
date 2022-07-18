@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import './LoginPage.css';
+// import './LoginPage.css';
 import { useNavigate } from "react-router-dom";
 
 
@@ -44,6 +44,12 @@ const Content = styled.div`
     flex-direction: column;
     padding: 80px 40px;
     height: 100%;
+
+    h3 {
+        margin: 0;
+        width: 375px;
+        text-align: left;        
+    }
 `;
 
 const LogoDiv = styled.div`
