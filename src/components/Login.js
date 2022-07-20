@@ -15,7 +15,7 @@ const Login = (props) => {
                 <SignUp onClick={() => {
                     navigate("/login");
                     }}>
-                    GET ALL THERE
+                    GET ALL HERE
                 </SignUp>
                 <Description>Get Premier Access to Raya and the Last Dragon for an additional fee with a Disney+ subscription. As of 03/26/21, the price of Disney+ and The Disney Bundle will increase by $1.</Description>
                 <CTALogoTwo src="/images/cta-logo-two.png" alt="cta-logo-two" />
@@ -68,7 +68,7 @@ const CTA = styled.div`
 `;
 
 const CTALogoOne = styled.img`
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     max-width: 600px;
     min-height: 1px;
     display: block;
@@ -79,8 +79,8 @@ const SignUp = styled.a`
     font-weight: bold;
     color: #f9f9f9;
     background-color: #0063e5;
-    margin-bottom: 12px;
-    width: 100%;
+    margin-bottom: 20px;
+    width: 30%;
     letter-spacing: 1.5px;
     font-size: 18px;
     padding: 16.5px 0;
@@ -95,10 +95,11 @@ const SignUp = styled.a`
 
 const Description = styled.p`
     color: hsla(0, 0%, 95.3%, );
-    font-size: 11px;
+    font-size: 14px;
     margin: 0 0 24px;
     line-height: 1.5;
     letter-spacing: 1.5px;
+    width: 50%;
 `;
 
 const CTALogoTwo = styled.img`
