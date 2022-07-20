@@ -5,6 +5,7 @@ import Header from './components/Header';
 import LoginPage from './components/LoginPage';
 import Password from './components/Password';
 import Home from './components/Home';
+import Detail from './components/Detail';
 import './App.css';
 
 function App() {
@@ -47,6 +48,15 @@ function App() {
               <>
                 <Header />
                 <Home /> 
+              </>       
+            }
+          />
+          <Route
+            path="/detail/:id"
+            element={
+              <>
+                <Header />
+                <Detail />
               </>       
             }
           />

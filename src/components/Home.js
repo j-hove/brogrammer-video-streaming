@@ -12,10 +12,10 @@ const Home = () => {
         <Container>
             <ImgSlider /> 
             <Viewers />
-            <Recommends />
-            <NewVinta />
-            <Originals />
-            <Trending />          
+            <Recommends type="recommend" />
+            <NewVinta type="new" />
+            <Originals type="original" />
+            <Trending type="trending" />          
         </Container>
     )
 };

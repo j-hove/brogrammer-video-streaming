@@ -10,7 +10,7 @@ const Header = (props) => {
             <Logo>
                 <img src="/images/logo.svg" alt="Disney+ Logo" />
             </Logo>
-            {pathname != "/home" ? (
+            {pathname == "/" ? (
                 <Login 
                     onClick={() => {
                         navigate("/login");
@@ -60,7 +60,7 @@ const Header = (props) => {
                     </NavMenu>
                     {/* UserMenu component is actually SignOut component                     */}
                     <UserMenu> 
-                        <UserImg src="/images/user.webp" alt="user" />                
+                        <UserImg src="/images/user.jpeg" alt="user" />                
                         <DropDown>
                             <span onClick={() => {
                                 navigate("/");
