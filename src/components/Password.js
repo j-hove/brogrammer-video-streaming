@@ -1,10 +1,14 @@
 import styled from "styled-components";
 import './LoginPage.css';
 import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 
 
 const Password = (props) => {
     let navigate = useNavigate();
+    const [data,setData] = useState();
+    const getData = (val) => {setData(val.target.value)}
+
     return (
         <Container>
             <Content>
@@ -14,10 +18,17 @@ const Password = (props) => {
                     </Logo>
                 </LogoDiv>
                 <h3>Enter your password</h3>
-                <input placeholder="Password" />
-                <button onClick={() => {
-                    navigate("/home");
-                    }}>Sign In</button>
+                <input type="password" placeholder="Password" onInput={getData} />
+                <button onClick={
+                    data=="disney"?() => {
+                        navigate("/home")                                        
+                    }:null
+                }>
+                    Sign In
+                </button>
+                <p>
+                    <a>Forgot Password?</a>
+                </p>
             </Content>            
         </Container>
     )
@@ -36,14 +47,62 @@ const Content = styled.div`
     margin-bottom: 10vw;
     width: 100%;
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 80px 40px;
+    padding: 20px 20px;
     height: 100%;
+
+    h3 {
+        margin: 0 0 10px 0;
+        width: 350px;
+        text-align: left;   
+        font-size: 21px;     
+    }
+
+    input {        
+        border-radius: 5px;
+        margin: 20px;
+        width: 350px;
+        position: relative;
+        border: 2px solid rgba(151, 151, 151, 0.34);
+        background-color: #31343e;
+        padding: 16px 10px;
+        color: #f9f9f9;
+        font-size: 15px;
+    }
+
+    button {
+        font-weight: bold;
+        margin: 10px;
+        color: #f9f9f9;
+        background-color: #0063e5;
+        width: 350px;
+        letter-spacing: 1.5px;
+        font-size: 18px;
+        padding: 12px 0;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0483ee
+        }
+    }
+
+    p {
+        margin: 25px;
+        width: 350px;
+        text-align: left;
+    }
+
+    a {
+        font-size: 15px;
+        color: #5394c9; 
+    }
 `;
 
 const LogoDiv = styled.div`
@@ -55,7 +114,7 @@ const LogoDiv = styled.div`
 `
 
 const Logo = styled.a`
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     max-width: 600px;
     min-height: 1px;
     display: block;

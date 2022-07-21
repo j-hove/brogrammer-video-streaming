@@ -60,7 +60,7 @@ const Header = (props) => {
                     </NavMenu>
                     {/* UserMenu component is actually SignOut component                     */}
                     <UserMenu> 
-                        <UserImg src="/images/user.jpeg" alt="user" />                
+                        <UserImg src="https://featuredanimation.com/wp-content/uploads/2022/02/Loki-Disney-Plus-Icon.jpg.webp" alt="user" />                
                         <DropDown>
                             <span onClick={() => {
                                 navigate("/");
