@@ -1,5 +1,5 @@
 # Project/Activity: Mini Project 2 and Capstone
-> This is a group activity for KodeGo bootcamp. The activity is to make a website as our initial or prototype of capstone project. The prototype will be part of our Mini Project 2 and the finished website will be our capstone project.
+> This is a group activity for KodeGo bootcamp. The activity is to make a website as our initial or prototype of capstone project. The prototype will be part of our Mini Project 2 and the finished website will be our capstone project. --- 
 
 ## Group Name: Brogrammer
 
