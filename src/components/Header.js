@@ -10,7 +10,7 @@ const Header = (props) => {
             <Logo>
                 <img src="/images/logo.svg" alt="Disney+ Logo" />
             </Logo>
-            {pathname == "/" ? (
+            {pathname == "/main" ? (
                 <Login 
                     onClick={() => {
                         navigate("/login");
@@ -63,7 +63,7 @@ const Header = (props) => {
                         <UserImg src="https://featuredanimation.com/wp-content/uploads/2022/02/Loki-Disney-Plus-Icon.jpg.webp" alt="user" />                
                         <DropDown>
                             <span onClick={() => {
-                                navigate("/");
+                                navigate("/main");
                                 }}
                             >Sign Out</span>
                         </DropDown>
