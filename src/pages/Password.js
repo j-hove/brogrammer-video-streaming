@@ -20,14 +20,14 @@ const Password = (props) => {
                 <h3>Enter your password</h3>
                 <input type="password" placeholder="Password" onInput={getData} />
                 <button onClick={
-                    data=="disney"?() => {
+                    data==="disney"?() => {
                         navigate("/home")                                        
                     }:null
                 }>
                     Sign In
                 </button>
                 <p>
-                    <a>Forgot Password?</a>
+                    <a href="/">Forgot Password?</a>
                 </p>
             </Content>            
         </Container>

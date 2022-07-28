@@ -14,7 +14,7 @@ class Main extends Component {
                     <div className="CTA">
                         <img className="CTALogoOne" src="/images/cta-logo-one.svg" alt="cta-logo-one" />
                     </div>
-                    <a className="SignUp" onClick={ 
+                    <a href="/" className="SignUp" onClick={ 
                         this.state.redirect && <Navigate to='/login' replace={true}/>
                     }>
                         SIGN UP HERE
