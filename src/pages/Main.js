@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Login.css';
+import './Main.css';
 import { Navigate } from "react-router-dom";
 
-class Login extends Component {
+class Main extends Component {
     state = {
         redirect:false
     }    
@@ -17,7 +17,7 @@ class Login extends Component {
                     <a className="SignUp" onClick={ 
                         this.state.redirect && <Navigate to='/login' replace={true}/>
                     }>
-                        GET ALL HERE CLASS Component
+                        SIGN UP HERE
                     </a>
                     <p className="Description">Get Premier Access to Raya and the Last Dragon for an additional fee with a Disney+ subscription. As of 03/26/21, the price of Disney+ and The Disney Bundle will increase by $1.</p>
                     <img className="CTALogoTwo" src="/images/cta-logo-two.png" alt="cta-logo-two" />
@@ -28,4 +28,4 @@ class Login extends Component {
     }
 } 
 
-export default Login
+export default Main

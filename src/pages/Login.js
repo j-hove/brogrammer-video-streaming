@@ -1,10 +1,9 @@
 import styled from "styled-components";
-// import './LoginPage.css';
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-const LoginPage = (props) => {
+const Login = (props) => {
     let navigate = useNavigate();
     const [data,setData] = useState();
     const getData = (val) => {setData(val.target.value)}
@@ -118,4 +117,4 @@ const Logo = styled.a`
     max-height: 175px;
 `
 
-export default LoginPage
+export default Login

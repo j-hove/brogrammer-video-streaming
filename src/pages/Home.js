@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import ImgSlider from "./ImgSlider";
-import NewVinta from "./NewVinta";
-import Originals from "./Originals";
-import Recommends from "./Recommends";
-import Trending from "./Trending";
-import Viewers from "./Viewers";
+import ImgSlider from "../components/ImgSlider";
+import NewVinta from "../components/NewVinta";
+import Originals from "../components/Originals";
+import Recommends from "../components/Recommends";
+import Trending from "../components/Trending";
+import Viewers from "../components/Viewers";
 
 
 const Home = () => {

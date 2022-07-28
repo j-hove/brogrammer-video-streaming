@@ -1,28 +1,29 @@
+// main imports
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // (I think this is for version react-router-dom v5)
-import Login from './components/Login';
-import Header from './components/Header';
-import LoginPage from './components/LoginPage';
-import Password from './components/Password';
-import Home from './components/Home';
-import Detail from './components/Detail';
 import './App.css';
 
+// imports for components
+import Header from './components/Header';
+
+// imports for Pages
+import Home from './pages/Home';
+import Detail from './pages/Detail';
+import Main from './pages/Main';
+import Login from './pages/Login';
+import Password from './pages/Password';
+
+
 function App() {
-  // var pathname = window.location.pathname;
-  // console.log(pathname);
-  
   return (    
     <div className="App">      
       <BrowserRouter>                
-        {/* {pathname.includes("login")===false ? <Header />: null} */}
         <Routes>
           <Route
             path="/"
             element={
               <>                
                 <Header />
-                <Login /> 
+                <Main /> 
               </>       
             }
           />
@@ -30,7 +31,7 @@ function App() {
             path="/login"
             element={
               <>
-                <LoginPage /> 
+                <Login /> 
               </>       
             }
           />
@@ -62,14 +63,6 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-      {/* (I think this is for version react-router-dom v5) */}
-      {/* <Router>
-        <Switch>
-          <Route exact path="/">
-            <Login />
-          </Route>
-        </Switch>
-      </Router> */}
     </div>
   );
 }
