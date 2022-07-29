@@ -36,7 +36,7 @@ function App() {
             }
           />
           <Route
-            path="/login/password"
+            path="/brogrammer-video-streaming/login/password"
             element={
               <>
                 <Password /> 
@@ -44,7 +44,7 @@ function App() {
             }
           />
           <Route
-            path="/home"
+            path="/brogrammer-video-streaming/home"
             element={
               <>
                 <Header />
@@ -53,7 +53,7 @@ function App() {
             }
           />
           <Route
-            path="/detail/:id"
+            path="/brogrammer-video-streaming/detail/:id"
             element={
               <>
                 <Header />

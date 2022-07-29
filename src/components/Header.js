@@ -13,7 +13,7 @@ const Header = (props) => {
             {pathname == "/brogrammer-video-streaming/" ? (
                 <Login 
                     onClick={() => {
-                        navigate("/login");
+                        navigate("/brogrammer-video-streaming/login");
                         }}
                     >
                     LOGIN
@@ -21,7 +21,7 @@ const Header = (props) => {
             ) : (
                 <>
                     <NavMenu>
-                        <a href="/home">
+                        <a href="/brogrammer-video-streaming/home">
                             <img src="/images/home-icon.svg" alt="HOME" />   
                             <span>
                                 HOME
@@ -63,7 +63,7 @@ const Header = (props) => {
                         <UserImg src="https://featuredanimation.com/wp-content/uploads/2022/02/Loki-Disney-Plus-Icon.jpg.webp" alt="user" />                
                         <DropDown>
                             <span onClick={() => {
-                                navigate("/main");
+                                navigate("/brogrammer-video-streaming/main");
                                 }}
                             >Sign Out</span>
                         </DropDown>
