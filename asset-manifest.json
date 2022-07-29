@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brogrammer-video-streaming/static/css/main.fd8a1b5d.css",
-    "main.js": "/brogrammer-video-streaming/static/js/main.66993191.js",
+    "main.js": "/brogrammer-video-streaming/static/js/main.3509753c.js",
     "static/media/login-background.jpg": "/brogrammer-video-streaming/static/media/login-background.05b1a1b3088cbb458939.jpg",
     "static/media/slick.svg": "/brogrammer-video-streaming/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/brogrammer-video-streaming/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/brogrammer-video-streaming/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/brogrammer-video-streaming/index.html",
     "main.fd8a1b5d.css.map": "/brogrammer-video-streaming/static/css/main.fd8a1b5d.css.map",
-    "main.66993191.js.map": "/brogrammer-video-streaming/static/js/main.66993191.js.map"
+    "main.3509753c.js.map": "/brogrammer-video-streaming/static/js/main.3509753c.js.map"
   },
   "entrypoints": [
     "static/css/main.fd8a1b5d.css",
-    "static/js/main.66993191.js"
+    "static/js/main.3509753c.js"
   ]
 }
