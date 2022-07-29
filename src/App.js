@@ -28,7 +28,7 @@ function App() {
             }
           />
           <Route
-            path="/login"
+            path="/brogrammer-video-streaming/login"
             element={
               <>
                 <Login /> 

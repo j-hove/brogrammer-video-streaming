@@ -10,7 +10,7 @@ const Header = (props) => {
             <Logo>
                 <img src="/images/logo.svg" alt="Disney+ Logo" />
             </Logo>
-            {pathname == "/main" ? (
+            {pathname == "/brogrammer-video-streaming/" ? (
                 <Login 
                     onClick={() => {
                         navigate("/login");
