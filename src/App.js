@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter>                
         <Routes>
           <Route
-            path="/main"
+            path="/brogrammer-video-streaming"
             element={
               <>                
                 <Header />
