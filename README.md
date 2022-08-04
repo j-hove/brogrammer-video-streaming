@@ -1,4 +1,4 @@
-# Project/Activity: Mini Project 2 and Capstone
+# Project/Activity: Mini Project 2 and Capstone (Note: User Login is hardcoded only. Scroll down for Login and Password)
 > This is a group activity for KodeGo bootcamp. The activity is to make a website as our initial or prototype of capstone project. The prototype will be part of our Mini Project 2 and the finished website will be our capstone project.
 
 ## Group Name: Brogrammer
@@ -17,3 +17,7 @@
 > River or sea (which are composed of water) in this case are collection or body of memories as well as a wide range of emotions which is inspired by the concept of "water memory" from French scientist Jacques Benveniste in 1988 (which is also the basis for the plot from the movie Frozen 2).
 > Hence, Vinta/Banca is a streaming platform that takes you to different journeys even the past nostalgic shows you formerly enjoy.
 
+
+#### Login and Password
+Email: admin@disney.com
+Password: disney
