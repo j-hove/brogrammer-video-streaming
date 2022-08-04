@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 
 // Component for Login Page
-const Login = (props) => {
+const Main = (props) => {
     let navigate = useNavigate();
 
     return (
@@ -110,4 +110,4 @@ const CTALogoTwo = styled.img`
     width: 100%;
 `;
 
-export default Login
+export default Main
