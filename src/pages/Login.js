@@ -20,14 +20,14 @@ const Login = (props) => {
                 <label className="errorEmail"></label>
                 <input type="email" placeholder="Email address" onInput={getData} />
                 <button onClick={
-                    data==="admin@disney.com"?() => {
+                    data=="admin@disney.com"?() => {
                         navigate("/login/password")                                        
                     }:null
                 }>
                     Continue
                 </button>
                 <p>
-                    New to Disney+? <a href="/">Sign up</a>
+                    New to Disney+? <a>Sign up</a>
                 </p>
             </Content>            
         </Container>

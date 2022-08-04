@@ -1,42 +1,41 @@
-// main imports
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // (I think this is for version react-router-dom v5)
+import Login from './components/Login';
+import Header from './components/Header';
+import LoginPage from './components/LoginPage';
+import Password from './components/Password';
+import Home from './components/Home';
+import Detail from './components/Detail';
 import './App.css';
 
-// imports for components
-import Header from './components/Header';
-
-// imports for Pages
-import Home from './pages/Home';
-import Detail from './pages/Detail';
-import Main from './pages/Main';
-import Login from './pages/Login';
-import Password from './pages/Password';
-
-
 function App() {
+  // var pathname = window.location.pathname;
+  // console.log(pathname);
+  
   return (    
     <div className="App">      
       <BrowserRouter>                
+        {/* {pathname.includes("login")===false ? <Header />: null} */}
         <Routes>
           <Route
-            path="/brogrammer-video-streaming"
+            path="/"
             element={
               <>                
                 <Header />
-                <Main /> 
-              </>       
-            }
-          />
-          <Route
-            path="/brogrammer-video-streaming/login"
-            element={
-              <>
                 <Login /> 
               </>       
             }
           />
           <Route
-            path="/brogrammer-video-streaming/login/password"
+            path="/login"
+            element={
+              <>
+                <LoginPage /> 
+              </>       
+            }
+          />
+          <Route
+            path="/login/password"
             element={
               <>
                 <Password /> 
@@ -44,7 +43,7 @@ function App() {
             }
           />
           <Route
-            path="/brogrammer-video-streaming/home"
+            path="/home"
             element={
               <>
                 <Header />
@@ -53,7 +52,7 @@ function App() {
             }
           />
           <Route
-            path="/brogrammer-video-streaming/detail/:id"
+            path="/detail/:id"
             element={
               <>
                 <Header />
@@ -63,6 +62,14 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
+      {/* (I think this is for version react-router-dom v5) */}
+      {/* <Router>
+        <Switch>
+          <Route exact path="/">
+            <Login />
+          </Route>
+        </Switch>
+      </Router> */}
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import './Login.css';
-import { useNavigate } from "react-router-dom";
+// import './LoginPage.css';
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
-const Password = (props) => {
+const LoginPage = (props) => {
     let navigate = useNavigate();
     const [data,setData] = useState();
     const getData = (val) => {setData(val.target.value)}
@@ -17,17 +17,18 @@ const Password = (props) => {
                         <img src="/images/logo.svg" alt="Disney+ Logo"/>
                     </Logo>
                 </LogoDiv>
-                <h3>Enter your password</h3>
-                <input type="password" placeholder="Password" onInput={getData} />
+                <h3>Log in with your email</h3>
+                <label className="errorEmail"></label>
+                <input type="email" placeholder="Email address" onInput={getData} />
                 <button onClick={
-                    data=="disney"?() => {
-                        navigate("/home")                                        
+                    data=="admin@disney.com"?() => {
+                        navigate("/login/password")                                        
                     }:null
                 }>
-                    Sign In
+                    Continue
                 </button>
                 <p>
-                    <a>Forgot Password?</a>
+                    New to Disney+? <a>Sign up</a>
                 </p>
             </Content>            
         </Container>
@@ -96,12 +97,7 @@ const Content = styled.div`
     p {
         margin: 25px;
         width: 350px;
-        text-align: left;
-    }
-
-    a {
-        font-size: 15px;
-        color: #5394c9; 
+        text-align: left;  
     }
 `;
 
@@ -122,4 +118,4 @@ const Logo = styled.a`
     max-height: 175px;
 `
 
-export default Password
+export default LoginPage
