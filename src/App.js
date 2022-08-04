@@ -18,7 +18,7 @@ function App() {
         {/* {pathname.includes("login")===false ? <Header />: null} */}
         <Routes>
           <Route
-            path="/brogrammer-video-streaming"
+            path="/"
             element={
               <>                
                 <Header />
